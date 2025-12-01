@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Digital humanities research project exploring [your topic]">
-    <meta name="author" content="Your Name">
-    <title>Your Project Title | WRIT 20833</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="author" content="Anthony D, Felipe Robledo, Gustavo Castillo">
+    <title>Sentimental Analysis on Movie Reviews| WRIT 20833</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <nav>
         <ul>
+            <li><a href="#overview">Overview</a></li>
             <li><a href="#question">Research Question</a></li>
             <li><a href="#data">Data & Methods</a></li>
             <li><a href="#analysis">Results & Analysis</a></li>
@@ -20,17 +21,25 @@
     </nav>
 
     <header>
-        <h1>Your Project Title</h1>
-        <p>Your Name | WRIT 20833 | Fall 2025</p>
+        <h1>Sentimental Analysis on Movie Reviews</h1>
+        <p>Anthony D, Felipe Robledo, Gustavo Castillo | WRIT 20833 | Fall 2025</p>
     </header>
 
     <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>This project investigates how <em>actor popularity</em> relates to the tone of <em>critical movie reviews</em>. Building directly on our HW4-1 and HW4-2 work, we scale up from initial experiments with VADER sentiment analysis and basic frequency patterns to a more focused, theory-informed inquiry about <strong>star power</strong> and reception. HW4-1 provided the sentiment pipeline and evaluation thresholds; HW4-2 added data cleaning, exploratory topic modeling, and workflow structure. Here, we integrate those components into a cohesive study: assembling a critic review corpus, deriving five actor popularity spans (span1–span5) from composite indicators, and comparing sentiment distributions across these spans.</p>
+            <p>The goal is not only to check if reviews are “more positive” for popular actors, but to examine <strong>distributional differences</strong> medians, variability, and tails that reveal consensus and outlier behavior. We pair quantitative results (box/violin plots of VADER compound scores) with humanities interpretation, asking how celebrity status shapes evaluative language and critical gatekeeping. The site presents our research question, methods, visualizations, key findings, and an integration & reflection section that connects computational insights to cultural analysis and outlines limitations and future directions.</p>
+        </section>
         <section id="question">
             <h2>Research Question</h2>
-            <!-- TODO: Add your research question here -->
-            <p>What patterns emerge when we analyze [your cultural phenomenon] using computational text analysis methods?</p>
+            <p><strong>Main Question:</strong> Does actor popularity influence the sentiment of critical movie reviews? Specifically, do films featuring highly popular actors receive more positive reviews compared to those with less popular actors?</p>
 
-            <p><strong>Background:</strong> Explain why this question matters and what motivated your research.</p>
+            <p><strong>Hypothesis:</strong> We hypothesize that movies featuring actors in higher popularity spans will receive more favorable critical reviews, as measured by VADER sentiment scores. This could reflect potential reviewer bias, audience expectations, or the correlation between star power and production quality.</p>
+
+            <p><strong>Background:</strong> The relationship between star power and critical reception remains a contested topic in film studies. While popular actors often command higher salaries and box office returns, it's unclear whether their presence actually influences how critics evaluate films. By applying sentiment analysis to movie reviews and categorizing actors by popularity metrics, this project investigates whether computational text analysis can reveal systematic patterns in critical discourse that may not be apparent through traditional qualitative methods alone.</p>
+
+            <p><strong>Why This Matters:</strong> Understanding this relationship has implications for film production decisions, marketing strategies, and broader questions about how celebrity culture shapes critical evaluation in the entertainment industry.</p>
         </section>
 
         <section id="data">
@@ -38,9 +47,9 @@
 
             <h3>Dataset</h3>
             <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> [Where did you collect your data?]</p>
-            <p><strong>Collection Method:</strong> [How did you gather the data? Instant Data Scraper? API? Manual collection?]</p>
-            <p><strong>Dataset Size:</strong> [Number of items, date range, etc.]</p>
+            <p><strong>Data Source:</strong> We collected the data from top 10000 celebrities dataset on kaggle, Selected 20 random actors from it.</p>
+            <p><strong>Collection Method:</strong> We used an API to get the all the movies, and reviews for each selected actor.</p>
+            <p><strong>Dataset Size:</strong> Final Dataset After everything is about 100,000.</p>
             <p><strong>Ethical Considerations:</strong> [How did you protect privacy? What ethical decisions did you make?]</p>
 
             <h3>Analysis Methods</h3>
@@ -52,7 +61,7 @@
             </ul>
         </section>
 
-        <section id="analysis">
+    <section id="analysis">
             <h2>Results & Analysis</h2>
             <!-- TODO: Add visualizations and code snippets -->
 
@@ -71,6 +80,7 @@
 
             <div class="code-title">sentiment_analysis.py</div>
             <pre><code>from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
 import pandas as pd
 
 analyzer = SentimentIntensityAnalyzer()
@@ -188,7 +198,7 @@ df['sentiment'] = df['compound'].apply(
         <p>📊 <strong>Project Materials:</strong>
             <a href="https://github.com/yourusername/project-name">View Google Colab Notebooks & Data on GitHub</a>
         </p>
-        <p>&copy; 2025 Your Name | WRIT 20833: Introduction to Coding in the Humanities</p>
+        <p>&copy; 2025 Anthony D, Felipe Robledo, Gustavo Castillo | WRIT 20833: Introduction to Coding in the Humanities</p>
     </footer>
 </body>
 </html>
