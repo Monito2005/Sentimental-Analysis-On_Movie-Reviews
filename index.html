@@ -45,20 +45,29 @@
         <section id="data">
             <h2>Data & Methods</h2>
 
-            <h3>Dataset</h3>
-            <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> We collected the data from top 10000 celebrities dataset on kaggle, Selected 20 random actors from it.</p>
-            <p><strong>Collection Method:</strong> We used an API to get the all the movies, and reviews for each selected actor.</p>
-            <p><strong>Dataset Size:</strong> Final Dataset After everything is about 100,000.</p>
-            <p><strong>Ethical Considerations:</strong> [How did you protect privacy? What ethical decisions did you make?]</p>
+            <h3>Data Collection & Preparation</h3>
+            
+            <p><strong>Data Sources:</strong> Building on the workflows established in HW4-1 and HW4-2, we assembled our review corpus using two primary sources. First, we selected 20 actors from Kaggle's "Top 10,000 Celebrities" dataset, which provided composite popularity metrics including social media followers, industry rankings, and engagement scores. This selection spanned different popularity tiers to capture variance across the celebrity spectrum. We then grouped these actors into five popularity spans (span1–span5) based on their composite indicator scores, with span1 representing the least popular and span5 the most popular actors.</p>
+
+            <p><strong>Collection Method Evolution:</strong> Initially, we attempted to scrape reviews from IMDb using Python libraries (BeautifulSoup and Selenium). However, we encountered critical limitations: IMDb's anti-scraping measures blocked requests, HTML parsing proved unreliable, and aggressive scraping raised ethical concerns about terms of service violations. We pivoted to <strong>The Movie Database (TMDB) API</strong>, which provided legitimate, structured access to movie metadata and user reviews. Using Python in <strong>Google Colab</strong>, we queried TMDB's API endpoints to retrieve each actor's filmography, filtered for feature films (2000-2024), and collected all available reviews. This process yielded approximately <strong>700 reviews</strong> after cleaning and deduplication—each containing review text, ratings, and metadata that we stored in structured CSV files for analysis.</p>
+
+            <p><strong>Ethical Considerations:</strong> We prioritized ethical data practices throughout. By using TMDB's API rather than scraping, we respected terms of service and rate limits. All reviews were publicly posted content, and we anonymized usernames in our analysis. We acknowledged key limitations: TMDB users skew younger than general audiences, self-selection bias favors extreme opinions, and our popularity metrics may not perfectly align with influence at each film's release date. We documented our complete pipeline in GitHub for reproducibility.</p>
 
             <h3>Analysis Methods</h3>
-            <p><strong>Tools:</strong> Python (pandas, VADER, Gensim)</p>
+            
+            <p><strong>Computational Pipeline:</strong> All analysis was conducted in Python using Google Colab notebooks, leveraging libraries established in our earlier assignments: <code>pandas</code> for data manipulation, <code>vaderSentiment</code> for sentiment scoring, <code>nltk</code> for text preprocessing, <code>gensim</code> for topic modeling, and <code>matplotlib/seaborn</code> for visualization. This workflow directly extended HW4-1's sentiment pipeline and HW4-2's data cleaning structure.</p>
+
+            <p><strong>Why These Methods?</strong> We selected three complementary analytical approaches to address different dimensions of our research question. Term frequency analysis identified distinctive vocabulary patterns across popularity spans—do reviewers use different language when discussing high-profile versus lesser-known actors? VADER sentiment analysis provided quantitative compound scores (-1 to +1) that we could aggregate and compare statistically. Topic modeling revealed latent thematic structures, showing whether certain critical frameworks (e.g., performance quality versus narrative coherence) correlate with actor popularity. Together, these methods move beyond simple "positive vs. negative" classifications to examine distributional differences, variability, and outlier behavior.</p>
+
             <ul>
-                <li><strong>Term Frequency Analysis:</strong> [Brief description of how you used this method]</li>
-                <li><strong>Sentiment Analysis (VADER):</strong> [What sentiment patterns did you look for?]</li>
-                <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
+                <li><strong>Term Frequency Analysis:</strong> We preprocessed review text by converting to lowercase, removing punctuation and stopwords, and tokenizing. We calculated normalized term frequencies for each popularity span to identify evaluative vocabulary that clustered around specific tiers (e.g., "charismatic," "overrated," "compelling").</li>
+                
+                <li><strong>Sentiment Analysis (VADER):</strong> We chose VADER because it handles social media-style text effectively, requires no training data, and manages negations well ("not good" vs. "very good"). For each review, VADER generated compound scores that we classified as positive (>0.05), negative (<-0.05), or neutral. We examined median scores, variability, and distributional tails across the five popularity spans using box plots and violin plots—capturing subtle patterns that mean comparisons alone might miss.</li>
+                
+                <li><strong>Topic Modeling (Gensim LDA):</strong> After preprocessing (lemmatization, bigram detection), we trained LDA models with varying topic counts (5, 8, 10) and selected the 8-topic model based on coherence scores. Discovered themes included "visual effects and spectacle," "character development," and "plot coherence." We analyzed how topic distributions varied across popularity spans to understand <em>what aspects</em> of films reviewers emphasized differently based on star power.</li>
             </ul>
+
+            <p><strong>Limitations:</strong> VADER cannot detect complex sarcasm or context-dependent sentiment (e.g., "so bad it's good"). Our popularity metrics reflect recent celebrity status rather than influence at each film's release. TMDB's user base may not represent professional critics. Sample size imbalances required statistical adjustments (bootstrapping, stratification). Most critically, observed correlations cannot prove causation—sentiment differences might reflect production budgets, genres, or directorial quality rather than actor popularity alone.</p>
         </section>
 
     <section id="analysis">
