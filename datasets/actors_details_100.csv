@@ -1,0 +1,101 @@
+id,name,popularity,gender,birthday,place_of_birth,actor_popularity_span
+6968,Hugh Jackman,144.698,Male,1968-10-12,"Sydney, New South Wales, Australia",span1
+192,Morgan Freeman,127.417,Male,1937-06-01,"Memphis, Tennessee, USA",span1
+64295,Alan Ritchson,110.068,Male,1982-11-28,"Grand Forks, North Dakota, USA",span1
+2331879,수지,109.827,Female,,South Korea,span1
+1373737,Florence Pugh,109.278,Female,1996-01-03,"Oxford, Oxfordshire, England UK",span1
+1907997,Min Do-yoon,106.81,Male,1983-05-04,"Seoul, South Korea",span1
+117642,Jason Momoa,104.967,Male,1979-08-01,"Honolulu, Hawaii, USA",span1
+1152083,Sabrina Carpenter,100.912,Female,1999-05-11,"Quakertown, Pennsylvania, USA",span1
+1400657,Sana Makbul,97.676,Female,1993-06-13,"Mumbai, Maharashtra, India",span1
+16483,Sylvester Stallone,96.969,Male,1946-07-06,"New York City, New York, USA",span1
+17142,Paul Dano,95.053,Male,1984-06-19,"New York City, New York, USA",span1
+1892,Matt Damon,92.266,Male,1970-10-08,"Boston, Massachusetts, USA",span1
+1813,Anne Hathaway,91.416,Female,1982-11-12,"Brooklyn, New York City, New York, USA",span1
+87722,Noomi Rapace,89.2,Female,1979-12-28,"Hudiksvall, Gävleborgs län, Sweden ",span1
+18182,Olga Kurylenko,88.612,Female,1979-11-14,"Berdiansk, Ukrainian SSR, USSR [now Zaporizhzhia Oblast, Ukraine]",span1
+70851,Jack Black,88.447,Male,1969-08-28,"Santa Monica, California, USA",span1
+3131,Antonio Banderas,88.44,Male,1960-08-10,"Málaga, Andalusia, Spain",span1
+587020,Theo James,87.213,Male,1984-12-16,"Oxford, England, UK",span1
+63312,Yvonne Strahovski,85.542,Female,1982-07-30,"Werrington Downs, Sydney, New South Wales, Australia",span1
+10882,Rosamund Pike,84.979,Female,1979-01-27,"Hammersmith, London, England, UK",span1
+1115,Stephen Graham,82.841,Male,1973-08-03,"Kirkby, England, UK",span2
+73139,Shirō Sano,81.003,Male,1955-03-04,"Yamanashi, Japan",span2
+140,Lucy Liu,63.243,Female,1968-12-02,"New York City, New York, USA",span2
+6941,Cameron Diaz,62.099,Female,1972-08-30,"San Diego, California, USA",span2
+64384,Michelle Yim,56.545,Female,1955-09-02,Hongkong,span2
+1100,Arnold Schwarzenegger,54.115,Male,1947-07-30,"Thal, Styria, Austria",span2
+1205,Richard Gere,52.014,Male,1949-08-31,"Philadelphia, Pennsylvania, USA",span2
+303927,Karthik Muthuraman,50.541,Male,1960-09-13,,span2
+2283,Stanley Tucci,49.697,Male,1960-11-11,"Peekskill, New York, USA",span2
+2578378,Im Cho-hee,48.969,Female,,,span2
+1533,Andie MacDowell,48.216,Female,1958-04-21,"Gaffney, South Carolina, USA",span2
+1018945,Fumi Nikaido,47.988,Female,1994-09-21,"Naha City, Okinawa, Japan",span2
+1442978,Danish Taimoor,47.488,Male,1983-02-16,"Karachi, Sindh, Pakistan",span2
+59860,Alice Eve,46.939,Female,1982-02-06,"London, England, UK",span2
+69718,Jon Cryer,46.781,Male,1965-04-16,"New York City, New York, USA",span2
+87527,Chu Sang-mi,46.732,Female,1973-05-09,"Seoul, South Korea",span2
+2091760,Wu Jinyan,46.717,Female,1990-08-16,"Dujiangyan, Sichun, China",span2
+71158,Lars Mikkelsen,46.651,Male,1964-05-06,"Gladsaxe, Copenhagen, Denmark",span2
+16935,Geena Davis,46.553,Female,1956-01-21,"Wareham, Massachusetts, USA",span2
+56890,Malcolm McDowell,46.478,Male,1943-06-13,"Horsforth, Yorkshire, England, UK",span2
+1088620,Sophie Rundle,45.816,Female,1988-04-21,"Bournemouth, Dorset, England, UK",span3
+1817307,Montana Jordan,45.038,Male,2003-03-08,"Longview, Texas, USA",span3
+1254465,Neslihan Atagül,44.403,Female,1992-08-20,"Istanbul, Turkey",span3
+66555,Whitney Cummings,44.198,Female,1982-09-04,"Washington, D.C., USA",span3
+518,Danny DeVito,44.027,Male,1944-11-17,"Asbury Park, New Jersey, USA",span3
+86232,Lucy Boynton,42.902,Female,1994-01-17,"New York City, New York, USA",span3
+65220,Danica McKellar,42.729,Female,1975-01-03,"La Jolla, California, USA",span3
+586419,Yang Zishan,42.349,Female,1986-11-06,Nanjing，Jiangsu Province，China,span3
+1330916,Choi Jin-hyuk,41.97,Male,1986-02-09,"Mokpo, South Jeolla, South Korea",span3
+61263,Skyler Gisondo,41.799,Male,1996-07-22,"Palm Beach County, Florida, USA",span3
+15736,Sylvia Syms,41.073,Female,1934-01-06,"Woolwich, London, England, UK",span3
+18352,Patrick Dempsey,41.038,Male,1966-01-13,"Lewiston, Maine, USA",span3
+32,Robin Wright,40.833,Female,1966-04-08,"Dallas, Texas, USA",span3
+4431,Jessica Lange,40.598,Female,1949-04-20,"Cloquet, Minnesota, USA",span3
+51998,Liza Lapira,39.925,Female,1981-12-03,"Queens, New York City, New York, USA",span3
+76788,Dev Patel,38.637,Male,1990-04-23,"Harrow, Greater London, England, UK",span3
+7090,Kelsey Grammer,38.611,Male,1955-02-21,"St. Thomas, U.S. Virgin Islands",span3
+1660888,Saoirse-Monica Jackson,37.83,Female,1993-11-24,"Derry, Northern Ireland, UK",span3
+18285,Jennifer Esposito,37.622,Female,1973-04-11,"New York City, New York, USA",span3
+2729190,Rebecca Patricia Armstrong,37.606,Female,2002-12-05,"Bangkok, Thailand",span3
+10727,John Hannah,37.263,Male,1962-04-23,"East Kilbride, Scotland, UK",span4
+202952,Mekia Cox,36.893,Female,1981-11-18,"Saint Croix, U.S. Virgin Islands",span4
+3999,Tom Hulce,36.773,Male,1953-12-06,"Detroit, Michigan, USA",span4
+936275,Aoi Yuki,35.821,Female,1992-03-27,"Chiba, Japan",span4
+4078,Lee Van Cleef,35.665,Male,1925-01-09,"Somerville, New Jersey, USA",span4
+86836,Mariya Vinogradova,35.417,Female,1922-07-13,"Navoloki, RSFSR, USSR",span4
+1381,John Noble,32.683,Male,1948-08-20,"Port Pirie, South Australia, Australia",span4
+55278,Jackie Cooper,32.49,Male,1922-09-15,"Los Angeles, California, USA",span4
+62095,Jon Huertas,32.154,Male,1976-10-23,"New York City, New York, USA",span4
+1732483,Sairi Ito,31.763,Female,1994-05-04,"Chiba, Japan",span4
+11703,Kerry Washington,31.66,Female,1977-01-31,"The Bronx, New York City, New York, USA",span4
+25654,Julianna Margulies,31.334,Female,1966-06-08,"Spring Valley, New York, USA",span4
+86896,Lyusyena Ovchinnikova,31.018,Female,1931-09-10,"Olyevsk, Zhitomirskaya oblast, Ukrainian SSR, USSR",span4
+126286,Mitsuki Saiga,30.604,Female,1973-06-12,"Saitama, Japan",span4
+141153,Kim Yeong-ok,30.158,Female,1937-12-05,"Incheon, South Korea",span4
+5586,Yeardley Smith,30.073,Female,1964-07-03,"Paris, France",span4
+1142530,Luis Guilherme,30.066,Male,1951-08-18,"São Paulo, São Paulo, Brazil",span4
+85943,Dan Seymour,29.882,Male,1915-02-22,"Chicago, Illinois, USA",span4
+43277,Joanne Kelly,28.365,Female,1978-12-22,"Bay d'Espoir, Newfoundland and Labrador, Canada",span4
+1987262,Gökçe Eyüboğlu,28.177,Female,1983-08-20,"İstanbul, Türkiye",span4
+1274508,Jaeden Martell,27.444,Male,2003-01-04,"Philadelphia, Pennsylvania, USA",span5
+1352403,Şükrü Özyıldız,26.69,Male,1988-02-18,"İzmir, Türkiye",span5
+208782,Holland Roden,26.666,Female,1986-10-07,"Dallas, Texas, USA",span5
+8986,James Rebhorn,26.372,Male,1948-09-01,"Philadelphia, Pennsylvania, USA",span5
+1547839,Richard Gadd,26.326,Male,1989-05-11,"Wormit, Fife, Scotland, UK",span5
+110058,Eri Fukatsu,25.766,Female,1973-01-11,"Oita City, Oita, Japan",span5
+41381,Sadie Frost,25.464,Female,1965-06-19,"London, England, UK",span5
+83436,Nita Talbot,25.111,Female,1930-08-08,"New York City, New York, USA",span5
+1571182,Morgane Polanski,24.845,Female,1993-01-20,,span5
+2442126,Caylee Cowan,24.671,Female,1998-03-19,"Los Angeles, California, USA",span5
+145245,Caitlin Stasey,24.616,Female,1990-05-01,"Melbourne, Victoria, Australia",span5
+2364949,Melanie Martinez,24.153,Female,1995-04-28,"Astoria, Queens, New York City, New York, USA",span5
+113948,Eugenia Yuan,24.103,Female,1976-01-22,"Los Angeles, California, USA",span5
+44205,Jeremy Ratchford,23.8,Male,1965-08-06,Kitchener - Ontario - Canada,span5
+17578,Sami Frey,23.727,Male,1937-10-13,"Paris, France",span5
+2033111,Bae Hae-seon,23.487,Female,1974-05-08,"Seodaemun, Seoul, South Korea",span5
+3639444,Alona Navarro,23.304,Female,,,span5
+25004,Shin Ha-kyun,22.987,Male,1974-05-30,"Seoul, South Korea",span5
+127394,Masao Kusakari,22.286,Male,1952-09-05,"Kokura, Fukuoka Prefecture, Japan",span5
+1889622,Alejandro Speitzer,21.986,Male,1995-05-31,"Culiacán, Sinaloa, Mexico",span5
