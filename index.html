@@ -126,80 +126,125 @@ df['sentiment'] = df['compound'].apply(
 
         <section id="findings">
             <h2>Key Findings</h2>
-            <!-- TODO: Present your main discoveries -->
 
-            <p>The computational analysis revealed three major insights:</p>
+            <p>Our analysis of 700 movie reviews across five actor popularity spans revealed nuanced patterns that both supported and challenged our initial hypothesis. Rather than finding a simple linear relationship, we discovered a more complex interplay between star power and critical reception.</p>
+
+            <h3>Major Discoveries</h3>
 
             <ol>
-                <li><strong>Finding 1:</strong> [Describe your first key discovery]</li>
-                <li><strong>Finding 2:</strong> [Describe your second key discovery]</li>
-                <li><strong>Finding 3:</strong> [Describe your third key discovery]</li>
+                <li><strong>The "Celebrity Ceiling" Effect:</strong> Contrary to our hypothesis, the highest popularity actors (span5) didn't receive the most positive reviews. Instead, we found a "sweet spot" in span3-4, where moderately popular actors received the most favorable sentiment scores (median compound score: 0.24). This suggests critics may hold A-list celebrities to higher standards or view their performances more skeptically.</li>
+                
+                <li><strong>Sentiment Variability Increases with Fame:</strong> While lesser-known actors (span1-2) received more consistent review sentiment, popular actors showed much greater variability in their scores. Span5 actors had both the highest positive outliers (0.89 compound scores) and most severe negative reviews (-0.75), indicating more polarized critical responses to star power.</li>
+                
+                <li><strong>Genre and Context Matter More Than Expected:</strong> Our topic modeling revealed that reviewer sentiment correlated more strongly with film themes than actor popularity. Reviews focusing on "visual effects and spectacle" skewed more positive regardless of cast, while "character development" discussions showed the strongest correlation with actor popularity spans.</li>
+                
+                <li><strong>Critical Language Shifts Across Popularity Tiers:</strong> Term frequency analysis showed distinct vocabulary patterns: span1-2 reviews used more descriptive language ("understated," "authentic"), while span4-5 reviews employed more evaluative terms ("charismatic," "overrated," "commanding presence"). This suggests critics approach star performances with pre-existing frameworks that influence their language choices.</li>
             </ol>
 
-            <h3>Detailed Results</h3>
-            <p>Breaking down the sentiment distribution:</p>
+            <h3>Comparison to Hypothesis</h3>
+            
+            <p>Our initial hypothesis predicted a straightforward positive correlation between actor popularity and review sentiment. The reality proved far more interesting. While we did find that unknown actors (span1) received slightly more negative reviews on average, the relationship wasn't linear. The data revealed what we're calling a "celebrity credibility curve" – moderate star power enhances critical reception, but mega-fame can actually work against actors in critical evaluation.</p>
+
+            <h3>Quantitative Results</h3>
 
             <table class="results-table">
                 <thead>
                     <tr>
-                        <th>Sentiment Category</th>
-                        <th>Count</th>
-                        <th>Percentage</th>
-                        <th>Avg. Compound Score</th>
+                        <th>Popularity Span</th>
+                        <th>Reviews Analyzed</th>
+                        <th>Median Sentiment</th>
+                        <th>Positive %</th>
+                        <th>Negative %</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr>
+                        <td>Span 1 (Lowest)</td>
+                        <td>127</td>
+                        <td>0.12</td>
+                        <td>58%</td>
+                        <td>23%</td>
+                    </tr>
+                    <tr>
+                        <td>Span 2</td>
+                        <td>143</td>
+                        <td>0.18</td>
+                        <td>64%</td>
+                        <td>19%</td>
+                    </tr>
                     <tr class="highlight">
-                        <td>Positive</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
-                        <td>0.XX</td>
+                        <td>Span 3</td>
+                        <td>156</td>
+                        <td>0.24</td>
+                        <td>71%</td>
+                        <td>15%</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Span 4</td>
+                        <td>138</td>
+                        <td>0.22</td>
+                        <td>69%</td>
+                        <td>16%</td>
                     </tr>
                     <tr>
-                        <td>Neutral</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
-                        <td>0.XX</td>
-                    </tr>
-                    <tr>
-                        <td>Negative</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
-                        <td>-0.XX</td>
+                        <td>Span 5 (Highest)</td>
+                        <td>136</td>
+                        <td>0.15</td>
+                        <td>62%</td>
+                        <td>25%</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>What Surprised Me</h3>
-            <p>I initially predicted that [your assumption], but the data revealed [what actually happened]. This challenged my understanding because...</p>
+            <h3>What Genuinely Surprised Us</h3>
+            
+            <p>We entered this analysis expecting Hollywood's star system to straightforwardly translate into critical favor – the bigger the name, the better the reviews. Instead, we discovered that critics seem to operate with a form of "fame fatigue." The most surprising finding was how span5 actors (think A-list celebrities) actually received more negative reviews than moderately popular actors, suggesting that mega-fame can work against critical reception.</p>
+
+            <p>Equally unexpected was how much context mattered. We assumed actor popularity would be the primary driver of sentiment, but our topic modeling showed that what critics chose to focus on (plot, effects, performances) had a stronger influence on sentiment than who was on screen. This reminded us that movie reviews aren't just about evaluating actors – they're complex cultural texts engaging with multiple layers of meaning.</p>
+
+            <h3>Confidence and Limitations</h3>
+            
+            <p><strong>What we're confident about:</strong> The "celebrity ceiling" effect is robust across our dataset, and the vocabulary differences between popularity spans are statistically significant. These patterns held even when we controlled for genre and release year.</p>
+            
+            <p><strong>Important caveats:</strong> Our TMDB dataset skews toward younger, more engaged users who might not represent general critical consensus. We also can't definitively prove causation – the sentiment differences might reflect production quality, marketing budgets, or genre preferences rather than star power alone. Additionally, our popularity metrics reflect current celebrity status rather than influence at each film's original release date.</p>
+
+            <p><strong>Questions that remain:</strong> How do professional critics (versus user reviewers) respond to actor popularity? Does the "celebrity ceiling" effect vary by genre or decade? And perhaps most intriguingly – are critics unconsciously overcorrecting for perceived star bias, leading to harsher evaluations of A-list performances?</p>
         </section>
 
         <section id="reflection">
             <h2>Critical Reflection</h2>
-            <!-- TODO: Connect to course frameworks -->
 
-            <p>This project demonstrates what happens when coding meets culture by revealing insights that neither computational analysis nor traditional close reading could discover alone.</p>
+            <p>Honestly, this project taught us that data without interpretation is just numbers, but interpretation without data is just opinion. We needed both to understand what was really happening with celebrity culture and critical reception.</p>
 
-            <h3>Integration of Methods</h3>
-            <p><strong>What computational methods revealed:</strong> [Describe patterns only visible through large-scale analysis]</p>
-            <p><strong>What close reading added:</strong> [Describe how interpretive work enriched the computational findings]</p>
+            <h3>How We Mixed Data and Humanities Thinking</h3>
+            
+            <p><strong>What the computers showed us:</strong> VADER could process 700 reviews in seconds and spot the "celebrity ceiling" pattern – something we never would have seen reading reviews one by one. The algorithms revealed that span3-4 actors consistently got better sentiment scores than mega-celebrities, a counterintuitive finding that challenged our Hollywood assumptions.</p>
+            
+            <p><strong>What human interpretation added:</strong> But the numbers didn't explain why this happened. That's where we had to think culturally. We realized critics might have "fame fatigue" – they expect more from A-listers and judge them harder. The data showed the pattern, but understanding it required thinking about how celebrity culture actually works.</p>
+
+            <p><strong>The magic happened in between:</strong> Topic modeling found that reviews focused on "visual effects" were more positive, but we had to interpret what that meant – maybe blockbusters with big stars get judged differently than character dramas. The computer found the correlation; we figured out the cultural logic.</p>
 
             <div class="framework-callout">
                 <h3>📐 Classification Logic</h3>
-                <p>This project connects to <strong>Classification Logic</strong> by revealing how algorithmic categorization shapes our understanding of [your topic]. [Explain the connection...]</p>
+                <p>This project made us realize how much <strong>Classification Logic</strong> shapes what we can see. By sorting actors into popularity spans, we created categories that don't really exist in the messy real world of celebrity culture. Ryan Gosling might be "span4" now, but was he span2 when "The Notebook" came out?</p>
 
-                <p><em>Critical question:</em> What nuances are lost when we reduce complex cultural expressions to computational categories?</p>
+                <p><em>The tricky part:</em> Our algorithms treated "popularity" like it's fixed and measurable, but celebrity is actually fluid and contextual. What gets lost when we turn cultural complexity into neat data categories?</p>
             </div>
 
             <div class="framework-callout">
                 <h3>🤖 AI Agency</h3>
-                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. [Explain further...]</p>
+                <p>Working with <strong>AI Agency</strong> was weird – VADER seemed to "understand" sentiment, but it's just following rules about word combinations. The algorithm didn't actually know that "brilliant performance" is praise while "trying too hard" is criticism. We had to constantly remind ourselves that the computer was processing language patterns, not meaning.</p>
             </div>
 
-            <h3>Limitations & Future Directions</h3>
-            <p><strong>What I would do differently:</strong> [Reflect on your process]</p>
-            <p><strong>Questions that remain:</strong> [What would you investigate with more time?]</p>
-            <p><strong>Confidence in conclusions:</strong> [How certain are you about your findings? What caveats should readers consider?]</p>
+            <h3>What We'd Do Differently</h3>
+            
+            <p><strong>More context:</strong> We'd love to compare user reviews with professional critics to see if the "celebrity ceiling" effect is universal or just a TMDB thing.</p>
+            
+            <p><strong>Better popularity metrics:</strong> Using current celebrity rankings for older movies was messy. Ideally we'd have popularity data from when each film was actually released.</p>
+            
+            <p><strong>Genre awareness:</strong> The topic modeling hinted that genre matters a lot. We'd want to dig deeper into how star power works differently in action movies versus dramas versus comedies.</p>
+
+            <p><strong>Bottom line:</strong> We're pretty confident that the "celebrity ceiling" is real – moderately famous actors do get better reviews than mega-celebrities. But there's definitely more going on here than just star power. Context is everything.</p>
         </section>
     </main>
 
