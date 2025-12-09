@@ -75,13 +75,13 @@
             <!-- TODO: Add visualizations and code snippets -->
 
             <h3>Sentiment Analysis Results</h3>
-            <p>Using VADER sentiment analysis, I examined [describe what you analyzed]...</p>
+            <p>Using VADER sentiment analysis, we examined how critical sentiment varies across actor popularity spans. Our analysis of 700 movie reviews revealed interesting patterns in how critics respond to different levels of celebrity status.</p>
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
-                <img src="images/sentiment-distribution.png"
-                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment">
-                <figcaption>Figure 1: Distribution of sentiment scores across dataset</figcaption>
+                <img src="images/DoesActorPopularityCritSen.png"
+                     alt="Chart showing relationship between actor popularity and critical sentiment scores">
+                <figcaption>Figure 1: Actor popularity vs. critical sentiment - revealing the "celebrity ceiling" effect</figcaption>
             </figure>
 
             <h3>Code Example</h3>
@@ -106,20 +106,20 @@ df['sentiment'] = df['compound'].apply(
 )</code></pre>
 
             <h3>Topic Modeling Results</h3>
-            <p>Using Gensim's LDA implementation, I identified [number] major topics...</p>
+            <p>Using Gensim's LDA implementation, we identified 8 major topics that revealed how different aspects of filmmaking correlate with actor popularity and critical reception.</p>
 
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
-                    <img src="images/topic-model.png"
-                         alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 2: Topic clusters from LDA analysis</figcaption>
+                    <img src="images/Narritive.png"
+                         alt="Narrative analysis showing thematic patterns in movie reviews">
+                    <figcaption>Figure 2: Narrative themes and critical focus across popularity spans</figcaption>
                 </figure>
 
                 <figure class="viz-container">
-                    <img src="images/word-cloud.png"
-                         alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 3: Most common terms in the corpus</figcaption>
+                    <img src="images/ReceptionActor.png"
+                         alt="Analysis of actor reception patterns in critical reviews">
+                    <figcaption>Figure 3: Critical reception patterns by actor popularity level</figcaption>
                 </figure>
             </div>
         </section>
